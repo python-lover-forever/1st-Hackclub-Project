@@ -2,10 +2,10 @@ while True :
   print("Welcome to the ATM system")
   d = {"ahmed": 1234, "shams": 12345}
   b= 1000
-  y = input("please enter your username : ")
+  y = input("please enter your username (ahmed) : ")
   if y in d :
     print("Welcome",y)
-    z = int(input("please enter your password : "))
+    z = int(input("please enter your password (1234) : "))
     if z == d[y] :
       print("\nyou are logged in")
       x = input("\nwhat do you want to do ? 1.check balance 2.withdraw 3.deposit 4.exit :")
@@ -29,4 +29,5 @@ while True :
       print("\nWrong Password Please try again")
   else:
     print("\nwrong username Please try again")
+
   
